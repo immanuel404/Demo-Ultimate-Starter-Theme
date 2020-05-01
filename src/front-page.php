@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <!-- TEXT & BUTTONS -->
-  <section class="showcazse">
+  <section class="showcase">
     <div class="container">
       <h1><?php echo get_theme_mod('showcase_heading', 'Ultimate Starter Theme'); ?></h1>
       <p><?php echo get_theme_mod('showcase_text', 'A easy-to-use WordPress Theme that provides all the essentials. With a Modern Design & Clean User Experience.'); ?></p>
@@ -33,6 +33,14 @@
     height: 100%;
     margin: 0;
   }
+@media (max-width: 700px) {
+.showcase h1 {
+  font-size: 35px;
+}
+.showcase p {
+  font-size: 15px;
+}
+}
   </style>
     <?php wp_footer(); ?>
     <!-- Optional JavaScript -->

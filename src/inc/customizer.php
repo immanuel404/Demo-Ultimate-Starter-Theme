@@ -2,7 +2,7 @@
 
 function wpb_customize_register($wp_customize) {
 	// SHOW SECTION
-	$wp_customize->azdd_section('showcase', array(
+	$wp_customize->add_section('showcase', array(
 		'title' => __('Showcase', 'wpbootstrap'),
 		'description' => sprintf(__('Options for the showcase', 'wpbootstrap')),
 		'priority' => 130	

@@ -1,7 +1,7 @@
 <div class="comments">
     <h2>Comments</h2>
 
-    <?php $azrgs =array(
+    <?php $args =array(
         'walker'            => null,
         'max_depth'         => '',
         'style'             => null,
@@ -68,9 +68,18 @@
     padding: 5px 10px;
 }
 .comment-form input,.comment-form textarea {
+    font-family: "Times New Roman", serif;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
-    margin-bottom: -10px;
+    margin-left: 40px;
 }
+@media (max-width: 700px) {
+.comment-form input,.comment-form textarea {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+}
+}
+
 </style>

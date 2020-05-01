@@ -1,16 +1,7 @@
 <?php get_header(); ?>
 
-<div class="contaziner1">
-  <!--  SIDE BAR -->
-  <div class="right">
-    <aside style="float: right; left: 10px;" class="col-md-4 blog-sidebar">
-      <div class="p-4 mb-4 bg-light rounded">
-      <?php if(is_active_sidebar('page-sidebar')): ?>
-        <?php dynamic_sidebar('page-sidebar'); ?>
-      <?php endif; ?>
-      </div>
-    </aside>
-  </div>
+  <!-- BODY BEGINS -->
+  <div class="flex-container">
   <!-- CONTENT -->
   <div class="left">
     <?php if(have_posts()) : ?>
@@ -31,10 +22,22 @@
       <p><?php __('No Posts Found'); ?></p>
     <?php endif; ?></aside>
     </div>
-    <hr>
-    <?php comments_template(); ?>
+    <!--  SIDE BAR -->
+    <div class="right">
+      <aside style="float: right; left: 10px;" class="col-md-11 blog-sidebar">
+        <div class="p-4 mb-11 bg-light rounded">
+        <?php if(is_active_sidebar('page-sidebar')): ?>
+          <?php dynamic_sidebar('page-sidebar'); ?>
+        <?php endif; ?>
+        </div>
+      </aside>
+    </div>
+    </div>
+    <div class="comm">
+      <hr>
+      <?php comments_template(); ?>
+    </div>
   </div>
-</div>
 
 <?php get_footer() ?>
 

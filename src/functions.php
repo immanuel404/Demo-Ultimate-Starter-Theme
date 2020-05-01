@@ -1,6 +1,6 @@
 	<?php
 	// REGISTER
-	function register_nazvwalker() {
+	function register_navwalker() {
 		require_once get_template_directory() . '/navbar/class-wp-bootstrap-navwalker.php';
 	}
 	// NAVBAR

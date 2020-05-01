@@ -1,5 +1,5 @@
 /*HEADER FORMAT*/
-.showcazse2 {
+.showcase2 {
   height: 200px;
   text-align: center;
   margin-bottom:10px;
@@ -17,21 +17,32 @@
 @media (max-width: 700px) {
 .showcase2 {
   margin-top:0px;
+   height: 150px;
 }
 .showcase2 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .showcase2 p {
-  font-size: 12px;
+  font-size: 10px;
 }
 }
 
 /*BODY FORMAT*/
-.right{}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.right{  
+  width: 50%;
+  margin: 30px;
+  margin-right: 40px;
+}
 .left {
-  width: 60%;
+  width: 80%;
   height: auto;
   color: black;
+  margin: 30px;
+  margin-left: 40px;
 }
 .container1 {
   margin-top: 20px;
@@ -40,10 +51,11 @@
 }
 .postHead {
   color: #1C3E66;
+  margin-bottom: 1px;
 }
 .postContent {
   font-family: "Times New Roman", serif;
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
 }
 .postFooter {
@@ -63,18 +75,34 @@
 }
 .left {
   width: 90%;
-  text-align: center;
   margin:20px;
 }
 .right {
   display: none;
+}
+.postContent {
+  font-family: "Baskerville", "Times New Roman";
+  font-size: 18px;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .postFooter {
   padding: 5px;
 }
 }
 
-/*HUMBNAIL IMAGE*/
+@media (max-width: 990px) {
+  .right {
+    display: none;
+  }
+  .left {
+  width: 92%;
+  margin:16px;
+}
+}
+/*THUMBNAIL IMAGE*/
 .thumb img {
 width: 100%;
 height: 400px;
@@ -83,5 +111,14 @@ margin-bottom: 10px;
 @media (max-width: 700px) {
 .thumb img {
 height: 200px;
+}
+}
+/*COMMENTS SECTION*/
+.comm {
+  margin: 20px;
+}
+@media (max-width: 700px) {
+.comm {
+  margin: 2px;
 }
 }

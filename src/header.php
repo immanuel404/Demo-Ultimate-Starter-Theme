@@ -2,7 +2,7 @@
 <html lang="en">
  <?php wp_head(); ?>
   <head>
-    <meta chazrset="<?php bloginfo('charset'); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Emmanuel A.O.">
